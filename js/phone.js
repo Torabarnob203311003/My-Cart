@@ -1,22 +1,39 @@
- document.getElementById('btn-phone-plus').addEventListener('click',function(){
+
+  function updatephone(increaseing){
+
+
 
     const previousphonefeild = document.getElementById('phone-value')
     const previousphonestring = previousphonefeild.value
     const previousphonenumber = parseInt(previousphonestring) ;
    
-    const newphonefeild = previousphonenumber + 1;
-    previousphonefeild.value = newphonefeild;
-     
+    let newphonefeild ;
+   
+      if (increaseing===true ){
 
+        newphonefeild=previousphonenumber + 1;
+  
+
+      }
+      else{
+
+        newphonefeild=previousphonenumber- 1;
+      }
+     
+ previousphonefeild.value = newphonefeild;
+ return  newphonefeild;
+
+  }
+
+document.getElementById('btn-phone-plus').addEventListener('click',function(){
+
+   const newphonefeild = updatephone(true)
+
+     
  })
  document.getElementById('btn-phone-minus').addEventListener('click',function(){
 
-    const previousphonefeild = document.getElementById('phone-value')
-    const previousphonestring = previousphonefeild.value
-    const previousphonenumber = parseInt(previousphonestring) ;
-   
-    const newphonefeild = previousphonenumber + 1;
-    previousphonefeild.value = newphonefeild;
-     
+  
+    const newphonefeild = updatephone(false)
 
  })
