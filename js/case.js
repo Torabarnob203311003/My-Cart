@@ -29,27 +29,28 @@
       previousfeild.value = realfeild
       return  realfeild;
   }
- document.getElementById('plus-section').addEventListener('click',function(){
 
-       const realfeild = updatedcase(true)
+  function  updatedcasetottalprize ( realfeild){
+
+
       const tottalpricecase = realfeild * 59
 
       const previousprize = document.getElementById('prize')
      previousprize.innerText =tottalpricecase
  
+  }
+ document.getElementById('plus-section').addEventListener('click',function(){
+
+       const realfeild = updatedcase(true)
+      updatedcasetottalprize(realfeild)
  })
 
    document.getElementById('minus-section').addEventListener('click',function(){
 
-      
-         const realfeild = updatedcase(false)
-      const tottalpricecase = realfeild * 59
-
-      const previousprize = document.getElementById('prize')
-     previousprize.innerText =tottalpricecase
-
-       
+       const realfeild = updatedcase(false)
      
+  updatedcasetottalprize(realfeild)
+  
    
 
    })
