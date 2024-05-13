@@ -28,6 +28,13 @@
 document.getElementById('btn-phone-plus').addEventListener('click',function(){
 
    const newphonefeild = updatephone(true)
+   const tottalelement =document.getElementById('phone-price')
+   
+
+    const tottalprice =  newphonefeild * 1219
+
+    tottalelement.innerText =tottalprice
+    
 
      
  })
@@ -35,5 +42,14 @@ document.getElementById('btn-phone-plus').addEventListener('click',function(){
 
   
     const newphonefeild = updatephone(false)
+
+     const tottalelement =document.getElementById('phone-price')
+   
+
+    const tottalprice =  newphonefeild * 1219
+
+    tottalelement.innerText =tottalprice
+    
+
 
  })
