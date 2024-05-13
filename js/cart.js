@@ -27,11 +27,16 @@
         realfeild = newfeild - 1
      }
       previousfeild.value = realfeild
+      return  realfeild;
   }
  document.getElementById('plus-section').addEventListener('click',function(){
 
-      updatedcase(true)
+       const realfeild = updatedcase(true)
+      const tottalpricecase = realfeild * 59
 
+      const previousprize = document.getElementById('prize')
+     previousprize.innerText =tottalpricecase
+ 
  })
 
    document.getElementById('minus-section').addEventListener('click',function(){
