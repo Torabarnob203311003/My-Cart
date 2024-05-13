@@ -41,7 +41,14 @@
 
    document.getElementById('minus-section').addEventListener('click',function(){
 
-       updatedcase(false)
+      
+         const realfeild = updatedcase(false)
+      const tottalpricecase = realfeild * 59
+
+      const previousprize = document.getElementById('prize')
+     previousprize.innerText =tottalpricecase
+
+       
      
    
 
