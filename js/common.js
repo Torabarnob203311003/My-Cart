@@ -20,13 +20,18 @@
          const currephonetotaal =getelemntbyid('phone-price')
      const currecasetotaal =getelemntbyid('prize')
      const curretottal = currephonetotaal + currecasetotaal
+     const finalcurrenttottal =parseFloat(curretottal)
       setelementvaluebyid ('sub-tottal',curretottal)
     
 
     //  taxt calculate 
    
-            const taxamonut = curretottal * 0.1
+            const taxamonut = (curretottal * 0.1).toFixed(2)
+            const finaltaxammount =parseFloat(taxamonut)
             setelementvaluebyid('tax-tottal',taxamonut)
+            const finalamount = finalcurrenttottal+finaltaxammount
+          
+            setelementvaluebyid('full-totall',finalamount)
 
 }
 
