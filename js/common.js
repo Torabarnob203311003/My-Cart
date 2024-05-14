@@ -42,3 +42,41 @@
 
 
 
+
+//   ignore this codes :  below codes  are just practices so ingore these 
+
+   document.getElementById('navigator').addEventListener('click',function(){
+
+                window.location.href = "cart.html";
+                console.log('yes im clicked')
+                
+
+
+            })
+   document.getElementById('iphone').addEventListener('click',function(){
+
+             
+                console.log('yes im the legend i phone')
+                
+
+
+            })
+   document.getElementById('text').addEventListener('click',function(){
+
+                console.log('yes im clicked')
+                
+
+
+            })
+   document.getElementById('text1').addEventListener('click',function(){
+
+                console.log('yes im clicked')
+                
+
+
+            })
+
+
+
+
+
