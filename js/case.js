@@ -43,6 +43,7 @@
 
        const realfeild = updatedcase(true)
       updatedcasetottalprize(realfeild)
+      calculatesubtotaal()
  })
 
    document.getElementById('minus-section').addEventListener('click',function(){
@@ -50,7 +51,7 @@
        const realfeild = updatedcase(false)
      
   updatedcasetottalprize(realfeild)
-  
+  calculatesubtotaal()
    
 
    })
