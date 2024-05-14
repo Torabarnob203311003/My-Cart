@@ -5,13 +5,30 @@
    return currephonetotaal ;
    }
 
+   function setelementvaluebyid (element,value){
+
+ const currentsub = document.getElementById(element)
+     currentsub.innerText = value;
+    
+     
+
+   }
+
    function calculatesubtotaal(){
 
 
          const currephonetotaal =getelemntbyid('phone-price')
      const currecasetotaal =getelemntbyid('prize')
      const curretottal = currephonetotaal + currecasetotaal
-     const currentsub = document.getElementById('sub-tottal')
-     currentsub.innerText = curretottal;
+      setelementvaluebyid ('sub-tottal',curretottal)
+    
 
-   }
+    //  taxt calculate 
+   
+            const taxamonut = curretottal * 0.1
+            setelementvaluebyid('tax-tottal',taxamonut)
+
+}
+
+//    full tottal
+
